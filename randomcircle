@@ -1,0 +1,26 @@
+import turtle
+
+# turtle birth and color set
+t = turtle.Turtle()
+t.pencolor("red")
+t.speed(0)
+t.penup()
+t.goto(0, 200)
+t.pendown()
+
+# bringing in yellow screen
+s = turtle.Screen()
+s.bgcolor("yellow")
+x = 0
+y = 0
+
+while True:
+    t.forward(x)
+    t.right(y)
+    x += 3
+    y += 1
+    if y == 200:
+        break
+    t.hideturtle()
+
+turtle.done()
